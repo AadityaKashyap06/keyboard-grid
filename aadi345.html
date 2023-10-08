@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .cont{
+        width:60%;
+        margin:auto;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .cont>div{
+        width:45%;
+        height:300px;
+    }
+    .cont>div:nth-child(1){
+        background-color: red;
+    }
+    .cont>div:nth-child(2){
+        background-color: green;
+    }
+    @media only screen and (max-width :600px){
+          .cont{
+            display: flex;
+        flex-direction:column;
+          }
+          .cont>div{
+            width:100%;
+            flex-shrink:0;
+          }
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

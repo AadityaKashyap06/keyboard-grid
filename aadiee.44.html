@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            padding-top: 20px;
+            background-color: rgb(217, 222, 227);
+        }
+      .nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-left: 20px;
+         padding-right: 20px;
+         background-color: white;
+      }
+      .options{
+        width:70%;
+        display: flex;
+        justify-content: space-evenly;
+        /* border:2px solid red; */
+      }
+      
+      a{
+        text-decoration: none;
+      }
+      .logo{
+        display: flex;
+        align-items: center;
+      }
+      .logo>button{
+        height:80%;
+        margin-right:5px;
+        display: none;
+      }
+      @media only  screen and (max-width:580px){
+        .options{
+            display: none;
+        }
+        .logo>button{
+            display: inline;
+        }
+      }
+      /* @media only screen and (min-width:580px){
+        #ss{
+            display: none;
+        }
+      } */
+    </style>
+</head>
+<body>
+ <div class="nav">
+   <div class="logo">
+    <button id="ss">ham</button>
+    <h1>Masai SCHOOL</h1>
+   </div>
+  <div class="options">
+    <a href="">HOME</a>
+    <a href="">SERVICES</a>
+    <a href="">PRICES</a>
+    <a href="">ABOUT_US</a>
+  </div>
+  <button>sign-in</button>
+ </div>
+   
+</body>
+</html>

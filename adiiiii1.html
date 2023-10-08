@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input   id="ss" type="text" placeholder="enter ur name" value="">
+   <br>
+   <input   id="ss2" type="text" placeholder="enter ur email" value="">
+   <button onclick="ss1()">Press-me</button>
+    <h1 id="tt1"></h1>
+    <h1 id="tt2"></h1>
+</body>
+</html>
+<script>
+    function ss1(){
+        let y=document.getElementById("ss").value;
+        let x=document.getElementById("ss2").value;
+        document.getElementById("tt1").innerText=y;
+        document.getElementById("tt2").innerText=x;
+    }
+</script>

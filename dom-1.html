@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-1-dom-manipulation:1</title>
+</head>
+<body>
+  <h1 id="head-1">I am heading</h1>
+  <p id="ss1"><i>Lorem ipsum dolor sit amet consectetur</i></p>
+  <div id="container">
+    Iam Box
+  </div>
+</body>
+</html>
+<script>
+   let x= document.getElementById("head-1").innerText;
+   console.log(x);
+   let  y=document.getElementById("ss1").innerHTML;
+   
+   console.log(y);
+   let z=document.getElementById("container").innerText
+   console.log(z)
+</script>
